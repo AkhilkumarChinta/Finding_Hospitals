@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practo.test.TopCitiesTest">
+      <class name="com.practo.test.AlertTest">
         <methods>
-          <include name="setUp"/>
-          <include name="countCities"/>
+          <include name="alertMessage"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
           <include name="getResult"/>
         </methods>
-      </class> <!-- com.practo.test.TopCitiesTest -->
+      </class> <!-- com.practo.test.AlertTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

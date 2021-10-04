@@ -67,7 +67,7 @@ public class Corporates extends FindHospitals {
 	// Function to fill the form and submit
 	public void fillDetails(WebDriver driver, String ename, String org_name, String e_mail, String phone_No)
 			throws IOException, InterruptedException {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		logger = report.createTest("TestCase-12:Validating Name textbox");
 		logger.log(Status.INFO, "Starting the Test Case");
